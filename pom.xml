@@ -18,7 +18,7 @@
 		<project.test.result.directory>${project.build.directory}/test-results</project.test.result.directory>
 		<sonar.exclusions>src/test/java/**/*.java</sonar.exclusions>
 		<sonar.host.url>http://44.197.200.105:9000/</sonar.host.url>
-		<sonar.username>admin</sonar.username>
+		<sonar.login>admin</sonar.login>
 		<sonar.password>admin1</sonar.password>
 			
 	</properties>
