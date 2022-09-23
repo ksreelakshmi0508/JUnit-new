@@ -16,8 +16,7 @@
 	<properties>
 		<java.version>8</java.version>
 		<project.test.result.directory>${project.build.directory}/test-results</project.test.result.directory>
-		<sonar.projectBaseDir>/home/ubuntu/sonar</sonar.projectBaseDir>
-		<sonar.java.binaries>target</sonar.java.binaries>
+		<sonar.exclusions>src/test/java/**/*.java</sonar.exclusions>
 	</properties>
 	<dependencies>
 		<dependency>
