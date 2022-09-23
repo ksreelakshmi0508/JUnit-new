@@ -14,7 +14,7 @@
 	<name>SpringProjectTest</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 		<project.test.result.directory>${project.build.directory}/test-results</project.test.result.directory>
 		<sonar.exclusions>src/test/java/**/*.java</sonar.exclusions>
 	</properties>
