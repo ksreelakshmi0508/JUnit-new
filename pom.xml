@@ -14,7 +14,7 @@
 	<name>SpringProjectTest</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>8</java.version>
+		<java.version>11</java.version>
 		<project.test.result.directory>${project.build.directory}/test-results</project.test.result.directory>
 		<sonar.exclusions>src/test/java/**/*.java</sonar.exclusions>
 	</properties>
@@ -29,7 +29,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+		<dependency>
+            		<groupId>org.springframework.boot</groupId>
+            		<artifactId>spring-boot-starter-tomcat</artifactId>
+            		<scope>provided</scope>
+		</dependency>
 	
 	</dependencies>
 
