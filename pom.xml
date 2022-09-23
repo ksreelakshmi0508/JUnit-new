@@ -14,12 +14,14 @@
 	<name>SpringProjectTest</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 		<sonar.exclusions>src/test/java/**/*.java</sonar.exclusions>
 		<sonar.host.url>http://44.197.200.105:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin1</sonar.password>
-			
+		<sonar.projectBaseDir>/home/ubuntu/sonar</sonar.projectBaseDir>
+		<sonar.java.binaries>target</sonar.java.binaries>
+		
 	</properties>
 	<dependencies>
 		<dependency>
@@ -32,7 +34,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	
 	</dependencies>
 
@@ -47,8 +53,20 @@
                     		<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
                 	</plugin>
-			
-		
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+          			<groupId>org.apache.maven.plugins</groupId>
+          			<artifactId>maven-compiler-plugin</artifactId>
+          			<version>3.8.1</version>
+        		</plugin>
+        		<plugin>
+          			<groupId>org.sonarsource.scanner.maven</groupId>
+          			<artifactId>sonar-maven-plugin</artifactId>
+          			<version>3.7.0.1746</version>
+        		</plugin>
 		</plugins>
 	</build>
 
